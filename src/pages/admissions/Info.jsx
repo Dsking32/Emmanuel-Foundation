@@ -15,7 +15,7 @@ export default function Info() {
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold">Applications Open: Jan 10, 2025</span>
-            <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold">Application Fee: ₦10,000</span>
+            <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-700 text-xs font-semibold">Application Fee: â‚¦10,000</span>
           </div>
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <Link to="/apply/program" className="btn btn-primary w-full sm:w-auto">Start Application</Link>
@@ -30,33 +30,33 @@ export default function Info() {
       <section className="container-wide py-12">
         <div className="grid md:grid-cols-3 gap-5">
           <article className="card p-6">
-            <span className="text-xs font-semibold text-[hsl(var(--brand))]">JSS1 — New</span>
+            <span className="text-xs font-semibold text-[hsl(var(--brand))]">JSS1 â€” New</span>
             <h3 className="font-semibold text-lg mt-1">Junior Secondary Entry</h3>
             <ul className="mt-3 text-sm text-gray-700 space-y-2">
-              <li>• FSLC (First School Leaving Certificate)</li>
-              <li>• Makurdi or Gboko campus</li>
-              <li>• Entrance assessment</li>
+              <li>â€¢ FSLC (First School Leaving Certificate)</li>
+              <li>â€¢ Makurdi or Gboko campus</li>
+              <li>â€¢ Entrance assessment</li>
             </ul>
             <Link to="/apply/program" className="btn btn-primary w-full mt-4">Apply</Link>
           </article>
 
           <article className="card p-6">
-            <span className="text-xs font-semibold text-[hsl(var(--brand))]">SS1 — New</span>
+            <span className="text-xs font-semibold text-[hsl(var(--brand))]">SS1 â€” New</span>
             <h3 className="font-semibold text-lg mt-1">Senior Secondary Entry</h3>
             <ul className="mt-3 text-sm text-gray-700 space-y-2">
-              <li>• FSLC</li>
-              <li>• Junior WAEC (BECE)</li>
-              <li>• Choose stream: Science, Arts, Commercial</li>
+              <li>â€¢ FSLC</li>
+              <li>â€¢ Junior WAEC (BECE)</li>
+              <li>â€¢ Choose stream: Science, Arts, Commercial</li>
             </ul>
             <Link to="/apply/program" className="btn btn-primary w-full mt-4">Apply</Link>
           </article>
 
           <article className="card p-6">
-            <span className="text-xs font-semibold text-[hsl(var(--brand))]">JSS/SS — Transfer</span>
+            <span className="text-xs font-semibold text-[hsl(var(--brand))]">JSS/SS â€” Transfer</span>
             <h3 className="font-semibold text-lg mt-1">Transfer Students</h3>
             <ul className="mt-3 text-sm text-gray-700 space-y-2">
-              <li>• JSS1–JSS3: FSLC + Transfer Letter + Previous School</li>
-              <li>• SS1–SS3: FSLC + Junior WAEC + Previous School</li>
+              <li>â€¢ JSS1â€“JSS3: FSLC + Transfer Letter + Previous School</li>
+              <li>â€¢ SS1â€“SS3: FSLC + Junior WAEC + Previous School</li>
             </ul>
             <Link to="/apply/program" className="btn btn-primary w-full mt-4">Apply</Link>
           </article>
@@ -69,12 +69,12 @@ export default function Info() {
           <div className="card p-6">
             <h3 className="font-semibold">Key Requirements</h3>
             <ul className="mt-3 text-sm text-gray-700 space-y-2">
-              <li>• FSLC (all entries)</li>
-              <li>• Junior WAEC (BECE) for SS1 New & SS Transfers</li>
-              <li>• Transfer Letter & Previous School (for JSS Transfers)</li>
-              <li>• Birth certificate & passport photo</li>
+              <li>â€¢ FSLC (all entries)</li>
+              <li>â€¢ Junior WAEC (BECE) for SS1 New & SS Transfers</li>
+              <li>â€¢ Transfer Letter & Previous School (for JSS Transfers)</li>
+              <li>â€¢ Birth certificate & passport photo</li>
             </ul>
-            <p className="text-xs text-gray-500 mt-3">Uploads: PDF/JPG/PNG • Max 2MB each</p>
+            <p className="text-xs text-gray-500 mt-3">Uploads: PDF/JPG/PNG â€¢ Max 2MB each</p>
           </div>
 
           <div className="card p-6">
@@ -86,7 +86,7 @@ export default function Info() {
               </div>
               <div className="rounded-lg border border-gray-200 p-3">
                 <div className="text-xs text-gray-500">Entrance Assessments</div>
-                <div className="font-semibold">Mar 15–29, 2025</div>
+                <div className="font-semibold">Mar 15â€“29, 2025</div>
               </div>
               <div className="rounded-lg border border-gray-200 p-3">
                 <div className="text-xs text-gray-500">Admissions List</div>
@@ -100,7 +100,7 @@ export default function Info() {
             <div className="mt-3 grid gap-3 text-sm">
               <div className="rounded-lg border border-gray-200 p-3">
                 <div className="text-xs text-gray-500">Application Fee</div>
-                <div className="font-semibold">₦10,000</div>
+                <div className="font-semibold">â‚¦10,000</div>
               </div>
               <div className="rounded-lg border border-gray-200 p-3">
                 <div className="text-xs text-gray-500">Acceptance (if admitted)</div>

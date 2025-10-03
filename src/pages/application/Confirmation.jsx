@@ -14,8 +14,8 @@ export default function Confirmation(){
         <p className="text-gray-700 mt-2">Thank you, {personal.firstName} {personal.lastName}. We have received your application.</p>
 
         <div className="bg-gray-50 rounded-lg p-4 mt-5 text-left">
-          <p className="text-sm"><b>Application ID:</b> {appId || "—"}</p>
-          <p className="text-sm"><b>Level:</b> {program.level || "—"} • Campus: {(program.branch==="makurdi"?"Makurdi":program.branch==="gboko"?"Gboko":"—")} {program.stream ? `• ${program.stream}` : ""}</p>
+          <p className="text-sm"><b>Application ID:</b> {appId || "â€”"}</p>
+          <p className="text-sm"><b>Level:</b> {program.level || "â€”"} â€¢ Campus: {(program.branch==="makurdi"?"Makurdi":program.branch==="gboko"?"Gboko":"â€”")} {program.stream ? `â€¢ ${program.stream}` : ""}</p>
           <p className="text-sm"><b>Submitted:</b> {new Date().toLocaleString()}</p>
         </div>
 

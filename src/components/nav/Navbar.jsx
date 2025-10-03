@@ -35,7 +35,7 @@ export default function Navbar() {
           className="md:hidden inline-flex items-center justify-center size-10 rounded-lg hover:bg-white/10"
           aria-label="Toggle menu"
         >
-          <span className="i">☰</span>
+          <span className="i">â˜°</span>
         </button>
       </nav>
 

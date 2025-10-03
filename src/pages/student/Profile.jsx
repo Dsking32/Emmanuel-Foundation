@@ -10,7 +10,7 @@ export default function Profile() {
 
   // Helpers
   const campusLabel =
-    BRANCHES.find((b) => b.id === user.branch)?.label || "—";
+    BRANCHES.find((b) => b.id === user.branch)?.label || "â€”";
   const initials = getInitials(user?.name || user?.admissionNo);
   const rows = [
     { k: "Full Name", v: user.name },
@@ -99,9 +99,9 @@ export default function Profile() {
 
           {/* Compact summary row for small screens */}
           <div className="md:hidden mb-4 grid gap-1 text-sm">
-            <p className="font-medium">{safe(user.name) || "—"}</p>
+            <p className="font-medium">{safe(user.name) || "â€”"}</p>
             <p className="text-gray-600">
-              {safe(user.admissionNo) || "—"} • {campusLabel}
+              {safe(user.admissionNo) || "â€”"} â€¢ {campusLabel}
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function Profile() {
                 <dt className="w-36 shrink-0 text-gray-500">{k}</dt>
                 <dd className="font-medium break-words">
                   {/* {icon && <span className="inline-flex -mt-0.5 mr-1 align-middle">{icon}</span>} */}
-                  {safe(v) || <span className="text-gray-400">—</span>}
+                  {safe(v) || <span className="text-gray-400">â€”</span>}
                 </dd>
               </div>
             ))}

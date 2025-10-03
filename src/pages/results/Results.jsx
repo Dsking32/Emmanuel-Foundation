@@ -85,14 +85,14 @@ export default function Results() {
     : { totalUnits: 0, totalPoints: 0, gpa: 0 };
 
   const branchLabel =
-    BRANCHES.find((b) => b.id === user?.branch)?.label || "—";
+    BRANCHES.find((b) => b.id === user?.branch)?.label || "â€”";
 
   return (
     <div className="container-wide py-10">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <h2 className="font-display text-3xl">Results</h2>
         <div className="text-sm text-gray-600">
-          {user?.name} — {user?.admissionNo} • <b>{branchLabel}</b>
+          {user?.name} â€” {user?.admissionNo} â€¢ <b>{branchLabel}</b>
         </div>
       </div>
 
@@ -150,13 +150,13 @@ export default function Results() {
             <div>
               <h3 className="text-xl font-semibold">{data.student.name}</h3>
               <p className="text-sm text-gray-600">
-                {data.student.class} • {data.session} • {data.term} Term
+                {data.student.class} â€¢ {data.session} â€¢ {data.term} Term
               </p>
               <p className="text-sm text-gray-600">
-                Admission No: <b>{data.student.admissionNo}</b> • DOB:{" "}
-                {data.student.dob} • Campus:{" "}
+                Admission No: <b>{data.student.admissionNo}</b> â€¢ DOB:{" "}
+                {data.student.dob} â€¢ Campus:{" "}
                 {BRANCHES.find((b) => b.id === data.student.branch)?.label ||
-                  "—"}
+                  "â€”"}
               </p>
             </div>
             <button onClick={() => window.print()} className="btn btn-accent">

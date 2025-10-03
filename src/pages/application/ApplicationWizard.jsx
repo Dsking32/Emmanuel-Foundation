@@ -88,7 +88,7 @@ export default function ApplicationWizard(){
     const file = e.target.files?.[0];
     if(!file) return;
     if(file.size > 2 * 1024 * 1024) { alert("Max file size is 2MB."); e.target.value=""; return; }
-    const entry = `${file.name} • ${(file.size/1024).toFixed(0)} KB`;
+    const entry = `${file.name} â€¢ ${(file.size/1024).toFixed(0)} KB`;
     setUploads(u => ({ ...u, [key]: entry }));
   }
 
@@ -96,17 +96,17 @@ export default function ApplicationWizard(){
   function prev(){ setCurrent(c=>Math.max(c-1, 0)); }
 
   const summaryRows = [
-    ["Campus", program.branch==="makurdi"?"Makurdi":program.branch==="gboko"?"Gboko":"—"],
-    ["Entry Class", program.entryClass || "—"],
+    ["Campus", program.branch==="makurdi"?"Makurdi":program.branch==="gboko"?"Gboko":"â€”"],
+    ["Entry Class", program.entryClass || "â€”"],
     ["Type", program.applicantType==="transfer"?"Transfer":"New"],
-    ["Stream", isSenior(program.entryClass) ? (program.stream || "—") : "—"],
-    ["Name", `${personal.firstName||"—"} ${personal.lastName||""}`.trim()],
-    ["DOB", personal.dob || "—"],
-    ["Guardian", guardian.name || "—"],
-    ["Prev. School", rules.needPrevSchool ? (academics.previousSchool || "—") : "—"],
-    ["FSLC", uploads.fslc ? "? Uploaded" : "—"],
-    ["Jnr WAEC", rules.needJnrWaec ? (uploads.juniorWaec ? "? Uploaded" : "—") : "—"],
-    ["Transfer Letter", rules.needTransferLetter ? (uploads.transferLetter ? "? Uploaded" : "—") : "—"],
+    ["Stream", isSenior(program.entryClass) ? (program.stream || "â€”") : "â€”"],
+    ["Name", `${personal.firstName||"â€”"} ${personal.lastName||""}`.trim()],
+    ["DOB", personal.dob || "â€”"],
+    ["Guardian", guardian.name || "â€”"],
+    ["Prev. School", rules.needPrevSchool ? (academics.previousSchool || "â€”") : "â€”"],
+    ["FSLC", uploads.fslc ? "? Uploaded" : "â€”"],
+    ["Jnr WAEC", rules.needJnrWaec ? (uploads.juniorWaec ? "? Uploaded" : "â€”") : "â€”"],
+    ["Transfer Letter", rules.needTransferLetter ? (uploads.transferLetter ? "? Uploaded" : "â€”") : "â€”"],
   ];
 
   return (
@@ -118,7 +118,7 @@ export default function ApplicationWizard(){
           <h2 className="font-display text-2xl sm:text-3xl">Fill Your Details</h2>
         </div>
         <div className="text-xs sm:text-sm text-gray-600">
-          {program.entryClass || "—"} {isSenior(program.entryClass)&&program.stream?`• ${program.stream}`:""} • {program.applicantType==="transfer"?"Transfer":"New"}
+          {program.entryClass || "â€”"} {isSenior(program.entryClass)&&program.stream?`â€¢ ${program.stream}`:""} â€¢ {program.applicantType==="transfer"?"Transfer":"New"}
         </div>
       </div>
 
@@ -179,7 +179,7 @@ export default function ApplicationWizard(){
           {current===3 && (
             <div className="grid gap-3">
               <div className="bg-gray-50 border border-black/5 rounded-lg p-3 text-sm">
-                <b>Required for your selection ({program.entryClass} • {program.applicantType==="transfer" ? "Transfer":"New"}):</b>
+                <b>Required for your selection ({program.entryClass} â€¢ {program.applicantType==="transfer" ? "Transfer":"New"}):</b>
                 <ul className="list-disc pl-5 mt-1">
                   <li>FSLC</li>
                   {rules.needJnrWaec && <li>Junior WAEC (BECE)</li>}
@@ -187,12 +187,12 @@ export default function ApplicationWizard(){
                   {rules.needPrevSchool && <li>Previous School Name</li>}
                 </ul>
               </div>
-              <FileField label="FSLC (First School Leaving Certificate)" required value={uploads.fslc} onChange={(e)=>handleFile(e,"fslc")} help="PDF/JPG/PNG • Max 2MB" />
+              <FileField label="FSLC (First School Leaving Certificate)" required value={uploads.fslc} onChange={(e)=>handleFile(e,"fslc")} help="PDF/JPG/PNG â€¢ Max 2MB" />
               {rules.needJnrWaec && (
-                <FileField label="Junior WAEC (BECE)" required value={uploads.juniorWaec} onChange={(e)=>handleFile(e,"juniorWaec")} help="PDF/JPG/PNG • Max 2MB" />
+                <FileField label="Junior WAEC (BECE)" required value={uploads.juniorWaec} onChange={(e)=>handleFile(e,"juniorWaec")} help="PDF/JPG/PNG â€¢ Max 2MB" />
               )}
               {rules.needTransferLetter && (
-                <FileField label="Transfer Letter" required value={uploads.transferLetter} onChange={(e)=>handleFile(e,"transferLetter")} help="PDF/JPG/PNG • Max 2MB" />
+                <FileField label="Transfer Letter" required value={uploads.transferLetter} onChange={(e)=>handleFile(e,"transferLetter")} help="PDF/JPG/PNG â€¢ Max 2MB" />
               )}
             </div>
           )}

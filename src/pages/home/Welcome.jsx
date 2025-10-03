@@ -15,7 +15,7 @@ export default function Welcome() {
             Emmanuel Foundation Secondary School
           </h1>
           <p className="mt-4 text-white/90 max-w-2xl mx-auto">
-            Nurturing bright minds with strong values. Apply for admission, view the admission list, and check results — all online.
+            Nurturing bright minds with strong values. Apply for admission, view the admission list, and check results â€” all online.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link to="/admissions/apply" className="btn btn-primary">Apply for 2025/2026</Link>
@@ -28,22 +28,22 @@ export default function Welcome() {
       <section className="container-wide py-12 md:py-16">
         <div className="grid md:grid-cols-3 gap-6">
           <article className="card p-6">
-            <div className="size-10 rounded-lg bg-[hsl(var(--brand))/0.08] grid place-items-center mb-4">🎓</div>
+            <div className="size-10 rounded-lg bg-[hsl(var(--brand))/0.08] grid place-items-center mb-4">ðŸŽ“</div>
             <h3 className="font-bold text-lg mb-2">Admissions</h3>
             <p className="text-[hsl(var(--muted))]">Simple online application with guided steps. Receive email updates.</p>
-            <Link to="/admissions/apply" className="mt-4 inline-block text-[hsl(var(--brand))] font-semibold">Start Application →</Link>
+            <Link to="/admissions/apply" className="mt-4 inline-block text-[hsl(var(--brand))] font-semibold">Start Application â†’</Link>
           </article>
           <article className="card p-6">
-            <div className="size-10 rounded-lg bg-[hsl(var(--brand))/0.08] grid place-items-center mb-4">📜</div>
+            <div className="size-10 rounded-lg bg-[hsl(var(--brand))/0.08] grid place-items-center mb-4">ðŸ“œ</div>
             <h3 className="font-bold text-lg mb-2">Admission List</h3>
             <p className="text-[hsl(var(--muted))]">Instantly check admission status by email or application ID.</p>
-            <Link to="/admissions/status" className="mt-4 inline-block text-[hsl(var(--brand))] font-semibold">Check Status →</Link>
+            <Link to="/admissions/status" className="mt-4 inline-block text-[hsl(var(--brand))] font-semibold">Check Status â†’</Link>
           </article>
           <article className="card p-6">
-            <div className="size-10 rounded-lg bg-[hsl(var(--brand))/0.08] grid place-items-center mb-4">📊</div>
+            <div className="size-10 rounded-lg bg-[hsl(var(--brand))/0.08] grid place-items-center mb-4">ðŸ“Š</div>
             <h3 className="font-bold text-lg mb-2">Results</h3>
             <p className="text-[hsl(var(--muted))]">Secure results portal with session filtering and printable sheets.</p>
-            <Link to="/results" className="mt-4 inline-block text-[hsl(var(--brand))] font-semibold">View Results →</Link>
+            <Link to="/results" className="mt-4 inline-block text-[hsl(var(--brand))] font-semibold">View Results â†’</Link>
           </article>
         </div>
       </section>
@@ -53,9 +53,9 @@ export default function Welcome() {
         <div className="card p-6">
           <h3 className="text-xl font-bold mb-3">Announcements</h3>
           <ul className="space-y-2 text-[hsl(var(--muted))]">
-            <li>• 2025/2026 Admissions now open.</li>
-            <li>• Orientation for new students: Oct 15, 2025.</li>
-            <li>• PTA Meeting: Nov 2, 2025.</li>
+            <li>â€¢ 2025/2026 Admissions now open.</li>
+            <li>â€¢ Orientation for new students: Oct 15, 2025.</li>
+            <li>â€¢ PTA Meeting: Nov 2, 2025.</li>
           </ul>
         </div>
       </section>

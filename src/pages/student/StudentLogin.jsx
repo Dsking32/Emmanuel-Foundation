@@ -9,7 +9,7 @@ const CAMPUSES = [
 ];
 
 export default function StudentLogin() {
-  const { login } = useAuth();                // ✅ use provider login
+  const { login } = useAuth();                // âœ… use provider login
   const navigate = useNavigate();
   const { state } = useLocation();
 
@@ -30,7 +30,7 @@ export default function StudentLogin() {
 
     setLoading(true);
     try {
-      // 🔑 Map UI fields to what AuthProvider expects
+      // ðŸ”‘ Map UI fields to what AuthProvider expects
       await login({
         admissionNo: schoolNo.trim(),
         dob,           // YYYY-MM-DD
@@ -117,7 +117,7 @@ export default function StudentLogin() {
             disabled={loading}
             className="btn btn-primary w-full disabled:opacity-60"
           >
-            {loading ? "Logging in…" : "Login"}
+            {loading ? "Logging inâ€¦" : "Login"}
           </button>
         </form>
       </main>

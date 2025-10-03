@@ -19,7 +19,7 @@ function App() {
         <h2 className="text-4xl font-bold text-green-600">Tailwind is working!</h2>
         <p className="max-w-2xl text-lg mb-6">
           Your future starts here. Apply now, check your admission status, and
-          view your results online — all in one place.
+          view your results online â€” all in one place.
         </p>
         <button className="bg-white text-blue-700 px-6 py-3 rounded font-semibold shadow hover:bg-gray-100 transition">
           Apply Now

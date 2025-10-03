@@ -68,23 +68,23 @@ export default function AdmissionsInfo() {
               <p className="text-gray-600 text-sm mt-1">Requirements depend on your selection.</p>
               <div className="grid md:grid-cols-3 gap-4 mt-4">
                 <PathCard
-                  tag="JSS1 — New"
+                  tag="JSS1 â€” New"
                   title="Junior Secondary Entry"
                   items={["FSLC (First School Leaving Certificate)", "Makurdi or Gboko campus", "Entrance assessment"]}
                   cta={<Link to="/apply/program" className="btn btn-primary w-full mt-4">Start JSS Application</Link>}
                 />
                 <PathCard
-                  tag="SS1 — New"
+                  tag="SS1 â€” New"
                   title="Senior Secondary Entry"
                   items={["FSLC", "Junior WAEC (BECE)", "Choose Stream: Science, Arts, Commercial"]}
                   cta={<Link to="/apply/program" className="btn btn-primary w-full mt-4">Start SS Application</Link>}
                 />
                 <PathCard
-                  tag="JSS/SS — Transfer"
+                  tag="JSS/SS â€” Transfer"
                   title="Transfer Students"
                   items={[
-                    "JSS1–JSS3: FSLC + Transfer Letter + Previous School name",
-                    "SS1–SS3: FSLC + Junior WAEC + Previous School name",
+                    "JSS1â€“JSS3: FSLC + Transfer Letter + Previous School name",
+                    "SS1â€“SS3: FSLC + Junior WAEC + Previous School name",
                   ]}
                   cta={<Link to="/apply/program" className="btn btn-primary w-full mt-4">Start Transfer Application</Link>}
                 />
@@ -97,7 +97,7 @@ export default function AdmissionsInfo() {
               <div className="mt-3 grid sm:grid-cols-3 gap-3">
                 {[
                   ["Applications Open", "Jan 10, 2025"],
-                  ["Entrance Assessments", "Mar 15–29, 2025"],
+                  ["Entrance Assessments", "Mar 15â€“29, 2025"],
                   ["Admissions List", "Apr 10, 2025"],
                 ].map(([k, v]) => (
                   <div key={k} className="rounded-lg border border-gray-200 p-3">
@@ -106,7 +106,7 @@ export default function AdmissionsInfo() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-gray-500 mt-3">Dates may adjust slightly; you’ll be notified via email/SMS.</p>
+              <p className="text-xs text-gray-500 mt-3">Dates may adjust slightly; youâ€™ll be notified via email/SMS.</p>
             </div>
 
             {/* Fees */}
@@ -131,9 +131,9 @@ export default function AdmissionsInfo() {
             <div className="card p-5">
               <h2 className="font-semibold">Helpful Notes</h2>
               <ul className="mt-3 space-y-2 text-sm text-gray-700">
-                <li>• Uploads must be PDF/JPG/PNG and not exceed 2MB each.</li>
-                <li>• Ensure names and dates match official certificates.</li>
-                <li>• For transfers, ensure your previous school details are accurate.</li>
+                <li>â€¢ Uploads must be PDF/JPG/PNG and not exceed 2MB each.</li>
+                <li>â€¢ Ensure names and dates match official certificates.</li>
+                <li>â€¢ For transfers, ensure your previous school details are accurate.</li>
               </ul>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function AdmissionsInfo() {
               <Link to="/student-login" className="btn bg-gray-100 font-semibold hover:bg-gray-200 w-full mt-2">Student Login</Link>
               <hr className="my-4" />
               <div className="text-xs text-gray-600 grid gap-2">
-                <div className="flex items-center gap-2"><Calendar /> Mon–Fri: 8:00–16:00</div>
+                <div className="flex items-center gap-2"><Calendar /> Monâ€“Fri: 8:00â€“16:00</div>
                 <div className="flex items-center gap-2"><Naira /> Paystack/Flutterwave supported</div>
               </div>
               <a href="#requirements" className="text-[hsl(var(--brand))] text-sm font-semibold inline-flex items-center gap-1 mt-4">
@@ -166,15 +166,15 @@ export default function AdmissionsInfo() {
             <div className="rounded-xl bg-white border border-gray-200 p-4">
               <h4 className="font-semibold">New Students</h4>
               <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                <li>• JSS1: FSLC</li>
-                <li>• SS1: FSLC + Junior WAEC (BECE)</li>
+                <li>â€¢ JSS1: FSLC</li>
+                <li>â€¢ SS1: FSLC + Junior WAEC (BECE)</li>
               </ul>
             </div>
             <div className="rounded-xl bg-white border border-gray-200 p-4">
               <h4 className="font-semibold">Transfer Students</h4>
               <ul className="mt-2 text-sm text-gray-700 space-y-1">
-                <li>• JSS1–JSS3: FSLC + Transfer Letter + Previous School</li>
-                <li>• SS1–SS3: FSLC + Junior WAEC (BECE) + Previous School</li>
+                <li>â€¢ JSS1â€“JSS3: FSLC + Transfer Letter + Previous School</li>
+                <li>â€¢ SS1â€“SS3: FSLC + Junior WAEC (BECE) + Previous School</li>
               </ul>
             </div>
           </div>

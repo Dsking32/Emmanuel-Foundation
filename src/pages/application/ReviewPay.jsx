@@ -5,7 +5,7 @@ function Row({ label, value }) {
   return (
     <div className="flex text-sm">
       <dt className="w-44 text-gray-500">{label}</dt>
-      <dd className="font-medium">{value || "—"}</dd>
+      <dd className="font-medium">{value || "â€”"}</dd>
     </div>
   );
 }
@@ -18,8 +18,8 @@ function requiredUploads(program){
   // Rules:
   // New JSS1: FSLC
   // New SS1: FSLC + Junior WAEC
-  // Transfer JSS1–JSS3: FSLC + Transfer Letter + Previous School
-  // Transfer SS1–SS3: FSLC + Junior WAEC + Previous School
+  // Transfer JSS1â€“JSS3: FSLC + Transfer Letter + Previous School
+  // Transfer SS1â€“SS3: FSLC + Junior WAEC + Previous School
   return {
     needFSLC: true,
     needJnrWaec: (applicantType==="new" && entryClass==="SS1") || (applicantType==="transfer" && isSenior(entryClass)),
@@ -36,7 +36,7 @@ function ruleSentence(program){
   if (r.needTransferLetter) items.push("Transfer Letter");
   if (r.needPrevSchool) items.push("Previous School Name");
   const typ = program.applicantType==="transfer" ? "Transfer" : "New";
-  const cls = program.entryClass || "—";
+  const cls = program.entryClass || "â€”";
   return { text: `Because you selected ${cls} (${typ}), required uploads: ${items.join(", ")}.`, items };
 }
 
@@ -77,7 +77,7 @@ export default function ReviewPay(){
           <button onClick={()=>edit(0)} className="text-sm text-[hsl(var(--brand))] hover:underline">Edit</button>
         </div>
         <dl className="grid md:grid-cols-2 gap-x-8 gap-y-3 mt-3">
-          <Row label="Campus" value={program.branch==="makurdi" ? "Makurdi" : program.branch==="gboko" ? "Gboko" : "—"} />
+          <Row label="Campus" value={program.branch==="makurdi" ? "Makurdi" : program.branch==="gboko" ? "Gboko" : "â€”"} />
           <Row label="Entry Class" value={program.entryClass}/>
           <Row label="Applicant Type" value={program.applicantType==="transfer" ? "Transfer" : "New"}/>
           <Row label="Stream (Senior)" value={program.stream}/>
@@ -155,7 +155,7 @@ export default function ReviewPay(){
           <button onClick={()=>edit(4)} className="text-sm text-[hsl(var(--brand))] hover:underline">Edit</button>
         </div>
         <p className="text-sm mt-2">
-          {declare ? "? You confirmed the information is accurate and agree to the NDPR policy." : "— Not yet confirmed"}
+          {declare ? "? You confirmed the information is accurate and agree to the NDPR policy." : "â€” Not yet confirmed"}
         </p>
       </section>
 

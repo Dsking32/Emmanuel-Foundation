@@ -186,7 +186,7 @@ export default function RootLayout() {
 
           {/* Footer inside overlay */}
           <div className="border-t border-gray-200 px-4 py-3 text-xs text-gray-500">
-            © {new Date().getFullYear()} Emmanuel Foundation
+            Â© {new Date().getFullYear()} Emmanuel Foundation
           </div>
         </div>
       </div>
@@ -227,7 +227,7 @@ export default function RootLayout() {
         </div>
         <div className="border-t border-white/10">
           <div className="container-wide py-4 text-xs text-white/60">
-            © {new Date().getFullYear()} Emmanuel Foundation Secondary School. All rights reserved.
+            Â© {new Date().getFullYear()} Emmanuel Foundation Secondary School. All rights reserved.
           </div>
         </div>
       </footer>

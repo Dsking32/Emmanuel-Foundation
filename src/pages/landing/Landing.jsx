@@ -30,12 +30,12 @@ export default function Landing() {
         />
         <div className="relative container-wide min-h-[70vh] md:min-h-[78vh] py-16 md:py-24 text-white grid">
           <div className="place-self-center text-center prose-max px-2">
-            <span className="kicker reveal">Makurdi • Gboko • Benue State</span>
+            <span className="kicker reveal">Makurdi â€¢ Gboko â€¢ Benue State</span>
             <h1 className="font-display leading-tight mt-3 reveal delay-1 text-4xl sm:text-5xl md:text-6xl">
               Emmanuel Foundation Secondary School
             </h1>
             <p className="mt-4 text-white/90 reveal delay-2 text-base sm:text-lg">
-              Excellence, discipline, and character — preparing students for WAEC/NECO and life.
+              Excellence, discipline, and character â€” preparing students for WAEC/NECO and life.
             </p>
             <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 reveal delay-3">
               <Link to="/admissions/info" className="btn btn-accent w-full sm:w-auto">Apply for Admission</Link>
@@ -51,11 +51,11 @@ export default function Landing() {
           {[
             { t: "Small Class Size", s: "Avg. 25 students" },
             { t: "Qualified Staff", s: "60+ certified teachers" },
-            { t: "STEM & Clubs", s: "Robotics • Debate • ICT" },
+            { t: "STEM & Clubs", s: "Robotics â€¢ Debate â€¢ ICT" },
             { t: "Strong Values", s: "Discipline & leadership" },
           ].map((x) => (
             <div key={x.t} className="flex items-start gap-3 reveal">
-              <div className="size-9 shrink-0 rounded-full bg-[hsl(var(--brand))] text-white grid place-items-center font-bold">✓</div>
+              <div className="size-9 shrink-0 rounded-full bg-[hsl(var(--brand))] text-white grid place-items-center font-bold">âœ“</div>
               <div>
                 <p className="font-semibold">{x.t}</p>
                 <p className="text-sm text-gray-600">{x.s}</p>
@@ -74,13 +74,13 @@ export default function Landing() {
         <div className="grid md:grid-cols-3 gap-5 mt-8">
           {[
             {
-              tag: "JSS1 — New",
+              tag: "JSS1 â€” New",
               title: "Junior Secondary Entry",
               points: ["FSLC required", "Makurdi or Gboko", "Entrance assessment"],
               href: "/apply/program",
             },
             {
-              tag: "SS1 — New",
+              tag: "SS1 â€” New",
               title: "Senior Secondary Entry",
               points: ["FSLC + Junior WAEC (BECE)", "Stream: Science/Arts/Commercial", "Makurdi or Gboko"],
               href: "/apply/program",
@@ -88,7 +88,7 @@ export default function Landing() {
             {
               tag: "Transfer (JSS/SS)",
               title: "Transfer Admissions",
-              points: ["From JSS1–JSS3: FSLC + Transfer Letter", "From SS1–SS3: FSLC + Junior WAEC", "Previous school name"],
+              points: ["From JSS1â€“JSS3: FSLC + Transfer Letter", "From SS1â€“SS3: FSLC + Junior WAEC", "Previous school name"],
               href: "/apply/program",
             },
           ].map((c) => (
@@ -96,7 +96,7 @@ export default function Landing() {
               <span className="badge badge-accent">{c.tag}</span>
               <h3 className="font-semibold text-lg mt-2">{c.title}</h3>
               <ul className="mt-3 text-sm text-gray-700 space-y-1">
-                {c.points.map((p) => <li key={p}>• {p}</li>)}
+                {c.points.map((p) => <li key={p}>â€¢ {p}</li>)}
               </ul>
               <Link to={c.href} className="btn btn-primary mt-4 w-full">Start Application</Link>
             </article>
@@ -110,13 +110,13 @@ export default function Landing() {
           <div className="reveal prose-max">
             <h2 className="font-display text-3xl sm:text-4xl">About Emmanuel Foundation</h2>
             <p className="text-gray-700 mt-3 text-sm sm:text-base">
-              For over two decades, we’ve nurtured bright minds with a balanced focus on academics, discipline,
+              For over two decades, weâ€™ve nurtured bright minds with a balanced focus on academics, discipline,
               and values. Our labs, clubs, and mentorship programs build confidence and real-world skills.
             </p>
             <ul className="mt-5 text-gray-700 space-y-2 text-sm sm:text-base">
-              <li>• State-of-the-art science & ICT labs</li>
-              <li>• Leadership & character development</li>
-              <li>• Strong alumni network and outcomes</li>
+              <li>â€¢ State-of-the-art science & ICT labs</li>
+              <li>â€¢ Leadership & character development</li>
+              <li>â€¢ Strong alumni network and outcomes</li>
             </ul>
             <div className="mt-6 flex gap-3">
               <Link to="/admissions/info" className="btn btn-primary">Admissions Info</Link>
@@ -163,7 +163,7 @@ export default function Landing() {
         <div className="container-wide py-14 md:py-16">
           <div className="flex items-end justify-between gap-4 reveal">
             <h2 className="font-display text-3xl sm:text-4xl">From Our Blog</h2>
-            <a href="#" className="hidden sm:inline text-[hsl(var(--brand))] font-semibold">View all →</a>
+            <a href="#" className="hidden sm:inline text-[hsl(var(--brand))] font-semibold">View all â†’</a>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 mt-6">
             {[
@@ -179,13 +179,13 @@ export default function Landing() {
                   <p className="text-gray-600 text-sm mt-2">
                     Helpful insights for students and parents to thrive at Emmanuel Foundation.
                   </p>
-                  <a href="#" className="text-[hsl(var(--brand))] font-semibold inline-block mt-3">Read more →</a>
+                  <a href="#" className="text-[hsl(var(--brand))] font-semibold inline-block mt-3">Read more â†’</a>
                 </div>
               </article>
             ))}
           </div>
           <div className="sm:hidden mt-4">
-            <a href="#" className="text-[hsl(var(--brand))] font-semibold">View all →</a>
+            <a href="#" className="text-[hsl(var(--brand))] font-semibold">View all â†’</a>
           </div>
         </div>
       </section>
@@ -197,15 +197,15 @@ export default function Landing() {
           <div className="mt-8 overflow-x-auto snap-x snap-mandatory no-scrollbar">
             <div className="flex gap-4 min-w-full px-2">
               {[
-                { name: "Mrs. Adeyemi", text: "My daughter’s confidence and grades improved tremendously. The teachers truly care." },
-                { name: "Mr. Okonkwo", text: "Discipline with kindness — Emmanuel Foundation builds character and excellence." },
+                { name: "Mrs. Adeyemi", text: "My daughterâ€™s confidence and grades improved tremendously. The teachers truly care." },
+                { name: "Mr. Okonkwo", text: "Discipline with kindness â€” Emmanuel Foundation builds character and excellence." },
                 { name: "Mrs. Hassan", text: "The labs, clubs, and mentorship are top-notch. Highly recommend the school!" },
                 { name: "Mr. Ibrahim", text: "Excellent communication with parents and strong academic support for students." },
               ].map((t, i) => (
                 <figure key={i} className="snap-center shrink-0 w-[88%] sm:w-[340px] md:w-[380px] card p-5 sm:p-6 reveal">
-                  <div className="text-3xl leading-none">“</div>
+                  <div className="text-3xl leading-none">â€œ</div>
                   <blockquote className="text-gray-700 mt-2 text-sm sm:text-base">{t.text}</blockquote>
-                  <figcaption className="mt-4 font-semibold text-[hsl(var(--brand))]">— {t.name}</figcaption>
+                  <figcaption className="mt-4 font-semibold text-[hsl(var(--brand))]">â€” {t.name}</figcaption>
                 </figure>
               ))}
             </div>
