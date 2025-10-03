@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local utilities/dumps
+Get-ProjectTree.ps1
+project-structure.txt
+src-dump.txt
+src-structure.txt
